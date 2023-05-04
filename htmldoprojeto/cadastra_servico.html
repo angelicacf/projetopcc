@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="css/boot.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/formulario.css" rel="stylesheet">
+    <link href="css/fonticon.css" rel="stylesheet">
+    <link href="css/lista.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modal.js"></script>
+    <link href="css/modal.css" rel="stylesheet">
+    <title>PROJETO HTLM MOD 3</title>
+</head>
+
+<body>
+    <!--INÍCIO DOBRA CABEÇALHO-->
+    <section>
+        <header class="navbar">
+            <div class="main-navbar">
+                <a class="main-navbar-logo-nome" href="index.html">
+                    <img class="imagem "src="img/logo.png" alt="Busca Service" title="Busca Service" width="80">
+                
+                <h1 class="nomesite">Busca Service</h1>
+                </a>
+    
+                <nav>
+                    <ul class="navmenu">
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="opcao.html">Voltar</a></li>
+                        <li><a href="index.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+    <main>
+      
+
+
+        <div class="box">
+            <form action="PHPProjeto/cadastrar_servico.php" method="post">
+                <fieldset>
+                    <legend><b>Cadastrar Serviços</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="categoria" id="categoria" class="inputUser" required>
+                        <label for="categoria" class="labelInput">Categoria</label>
+                    </div>
+                    <br><br>
+
+                </fieldset>
+                <div class="btn_alinhamento">
+                        <button type="submit" id="submit">Enviar</button>
+                    </a>
+                    <a href="opcao.html">
+                        <button type="button" id="cancel">Cancelar</button>
+                    </a>
+                    
+                </div>    
+            </form>
+        </div>
+        <!--FIM 1ª DOBRA-->
+
+        <footer class="main_footer_rights">
+            <p> BUSCA SERVICE - Todos os direitos reservados. &reg;</p>
+        </footer>
+
+    </main>
+    <!--FIM DOBRA PALCO PRINCIPAL-->
+
+</body>
+
+</html>

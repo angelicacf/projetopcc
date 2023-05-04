@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/boot.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/fonticon.css" type="text/css">
+    <link rel="stylesheet" href="css/modal.css" type="text/css">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <title>Quem Somos</title>
+</head>
+<body>
+    <!--INÍCIO DOBRA CABEÇALHO-->
+    <section>
+    <header class="navbar">
+        <div class="main-navbar">
+            <a class="main-navbar-logo-nome" href="index.html">
+                <img class="imagem "src="img/logo.png" alt="Busca Service" title="Busca Service" width="80">
+            
+            <h1 class="nomesite">Busca Service</h1>
+            </a>
+
+            <nav>
+                <ul class="navmenu">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                    <li><a href="" class="modal-link">Faça seu Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</section>
+
+    <!--INICIO POP LOGIN-->
+    <div class="overlay"></div>
+    <div class="modal">
+        <div class="div_login">
+            <form action="gerenciamento.html" method="post">
+                <h1>Fazer login</h1><br>
+                <input type="text" placeholder="Digite nome ou CPF" name="Digite nome ou CPF" class="input"> <br><br>
+                <input type="password" placeholder="Digite sua senha" name="Digite sua senha" class="input"> <br><br>
+                <button class="button">Enviar</button>
+            </form>
+            <h2><a href="#">Esqueceu sua senha? Crie uma nova aqui</a></h2><br>
+            <h2><a href="#">Não tem uma conta? Registre-se agora mesmo!</a></h2>
+        </div>
+    </div>
+    <!--FIM POP LOGIN-->
+
+    <!--FIM DOBRA CABEÇALHO-->
+
+    <!--INÍCIO DOBRA POLITICA DE QUEM SOMOS-->
+    <main>
+        <section>
+            <article class="introducao">
+                <header>
+                    <h>Quem Somos - BuscaService!</h>
+                </header>
+            </article>
+
+            <div>  
+
+                <h1>Nosso Negócio</h1><br><br>
+
+    <p>Trata-se de um site que visa facilitar a busca por quaisquer serviços de que o cliente precisa, divulgando o trabalho de profissionais das mais diversas áreas.</p><br>
+                
+                <h1>Missão</h1><br><br>
+
+    <p>Nosso objetivo principal é ajudar a quem precisa de trabalho, contudo nosso site oferece apoio tanto para clientes quanto para profissionais. 
+        Nosso público alvo é quem está disposto a acrescentar junto conosco.</p><br>
+                
+                <h1>Visão</h1><br><br>
+
+     <p>Esperamos que futuramente nosso site tenha um amplo crescimento dentro do mercado de trabalho e que seja reconhecido principalmente por pessoas que estejam precisando de serviços autônomos. 
+        Além disso, que conquiste espaço internacional por meio da inovação, estando sempre à frente dos demais.</p><br>  
+                
+                <h1>Valores</h1><br><br>
+
+        <p>Parceria, serviço ao cliente, integridade e responsabilidade. Foco em resultados, segurança, eficiência e facilidade. Simplicidade, 
+         foco na satisfação do cliente, qualidade e melhoria dos serviços. </p><br>
+         <p>Acessibilidade e prosperidade para todos. Essas são algumas de nossas crenças, filosofia e princípios que deverão orientar nossos negócios e atividades. 
+          Deverão ser a motivação, o direcionamento e o posicionamento para agir com foco nos objetivos e na ética.</p><br><br>
+  
+        </div>
+    </section>
+    <section>  
+        
+    
+                          
+            <!--FIM DOBRA POLITICA DE PRIVACIDADE-->
+    
+            
+            <!--INCIIO DOBRA RODAPE-->
+    
+        <section class="main_footer">
+            <header>
+                <h1>Quer saber mais?</h1>
+            </header>
+            <article class="main_footer_our_pages">
+                <header>
+                    
+                </header>
+                <ul>
+                    <li><a href="index.html">Topo</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                </ul>
+            </article>
+    
+            <article class="main_footer_links">
+                <header>
+                    <h2>Links Úteis</h2>
+                </header>
+                <ul>
+                    <li><a href="politicadeprivacidade.html">Política de Privacidade</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="termosdeuso.html">Termos de Uso</a></li>
+                </ul>
+            </article>
+    
+            <article class="main_footer_about">
+                <header>
+                    <h2>Sobre o Projeto</h2>
+                </header>
+                <p>Proporcionando maior conforto aos usuários na busca por serviços essenciais, ao mesmo tempo em que encurta a distância entre profissionais qualificados e seus clientes em potencial</p>
+            </article>
+        </section>
+    
+        <footer class="main_footer_rights">
+            <p> BUSCA SERVICE - Todos os direitos reservados. &reg;</p>
+        </footer>
+        <!--FIM DOBRA RODAPE-->
+        
+    </body>
+    </html>
+    <script>
+        // Seleciona o link e a janela modal
+        var link = document.querySelector('.modal-link');
+        var modal = document.querySelector('.modal');
+        var overlay = document.querySelector('.overlay');
+    
+        // Adiciona um listener de evento para o link
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // previne o comportamento padrão do link (navegar para outra página)
+    
+            overlay.style.display = 'block'; // exibe a camada escura
+            modal.style.display = 'block'; // exibe a janela modal
+        });
+    
+        // Adiciona um listener de evento para a camada escura
+        overlay.addEventListener('click', function () {
+            overlay.style.display = 'none'; // oculta a camada escura
+            modal.style.display = 'none'; // oculta a janela modal
+        });
+    </script>
+    </html>

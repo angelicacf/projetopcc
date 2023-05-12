@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="css/boot.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/formulario.css" rel="stylesheet">
+    <link href="css/fonticon.css" rel="stylesheet">
+    <link href="css/lista.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modal.js"></script>
+    <link href="css/modal.css" rel="stylesheet">
+    <title>CADASTRA USUÁRIO PROFISSIONAL</title>
+</head>
+
+<body>
+    <!--INÍCIO DOBRA CABEÇALHO-->
+    <section>
+        <header class="navbar">
+            <div class="main-navbar">
+                <a class="main-navbar-logo-nome" href="index.html">
+                    <img class="imagem "src="img/logo.png" alt="Busca Service" title="Busca Service" width="80">
+                
+                <h1 class="nomesite">Busca Service</h1>
+                </a>
+    
+                <nav>
+                    <ul class="navmenu">
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="opcao.html">Voltar</a></li>
+                        <li><a href="index.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+    <main>
+      
+
+
+        <div class="box">
+            <form action="" method="post">
+                <fieldset>
+                    <legend><b>Cadastrar Usuário</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">E-mail</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="senha" id="senha" class="inputUser" required>
+                        <label for="senha" class="labelInput">Senha:</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                        <label for="cpf" class="labelInput">CPF:</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                        <label for="endereco" class="labelInput">Endereço:</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput">Telefone para WhatsApp:</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput">Telefone:</label>
+                    </div>
+                    <br><br>
+                    <div class="select-categoria">
+                        <select class="form-control selectCategoria">
+
+                            <option value="todas-as-categorias"> Escolha uma Categoria </option>
+
+                                                        <option value="12-automotivo"> Automotivo </option>
+                                                        <option value="11-anuncios-consertos-manutencao-assistencia-tecnica"> Consertos  </option>
+                                                        <option value="23-consultoria"> Consultoria </option>
+                                                        <option value="13-anuncios-empregadas-diaristas-domesticas-cuidadores-baba"> Doméstico </option>
+                                                        <option value="10-educacao"> Educação </option>
+                                                        <option value="18-estetica"> Estética </option>
+                                                        <option value="19-aluguel-mesas-cadeiras-festas-eventos"> Eventos </option>
+                                                        <option value="25-grafica-impressao"> Gráfica/Impressão </option>
+                                                        <option value="16-anuncios-assistencia-tecnica-em-informatica"> Informática </option>
+                                                        <option value="22-outros"> Outros </option>
+                                                        <option value="15-reformas-pedreiro-pintor-eletricista-gesseiro-encanador"> Reformas </option>
+                                                        <option value="14-saude"> Saúde </option>
+                                                        <option value="24-anuncios-transportes-mudancas-frete-carretinha"> Transportes </option>
+                            
+                        </select>
+
+                        <script>
+
+                            document.querySelector(".selectCategoria").onchange = function(){ 
+                                
+                                location.href = PATH + 'anuncios/' + document.querySelector(".selectCategoria").value; 
+
+                            }
+
+                        </script>
+
+                    </div>  
+                    <br><br>
+                                   
+                    <div class="inputBox">
+                        <label for="field_cdescricaocurta"><span>*</span>Descrição Curta do seu Serviço:</label>
+                        <input type="nome" class="form-control" maxlength="50" id="field_descricaocurta" name="descricaocurta" placeholder="Descrição curta" data-titulo="Descrição curta" data-obrigatorio="1">
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <label for="field_image"><span>*</span>Imagem principal (370x370):</label>
+                        <p class="custom-file">
+                            <input type="file" class="custom-file-input" name="image" id="field_image" data-titulo="Imagem" data-obrigatorio="1" accept="image/*">
+                            <label class="custom-file-label" for="field_image"> Imagem principal ( JPG ou PNG )</label>
+                        </p>
+                    </div>
+                    <br><br>  
+                    <div class="inputBox">
+                        <input type="text" name="status" id="status" class="inputUser" required>
+                        <label for="status" class="labelInput">Status</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="dataderegistro" id="dataderegistro" class="inputUser" required>
+                        <label for="dataderegistro" class="labelInput">Data de Registro</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <label for="field_conteudo"><span>*</span> Descrição Completa do seu Serviço: </label>
+                        <textarea class="form-control" id="field_conteudo" name="conteudo" rows="3" data-titulo="Conteúdo" data-obrigatorio="1"></textarea>
+                    </div>
+                    <div class="row galeria">
+            
+                        <div class="col-6 col-sm-3 col-lg-2 "> 
+<div class="blc blc0">
+
+<div class="img">     	
+    <input type="file" data-input="0" accept="image/*"/>     	
+    <span> processando... </span>        
+    <p> Selecionar foto </p>        
+</div> 	        
+
+<a href="javascript:;" onclick="removeImgGalery('0')"> Excluir </a>    
+
+</div>
+
+<div class="blc blc1">
+                
+    <div class="img">     	
+        <input type="file" data-input="1" accept="image/*"/>     	
+        <span> processando... </span>        
+        <p> Selecionar foto </p>        
+    </div> 	        
+    
+    <a href="javascript:;" onclick="removeImgGalery('1')"> Excluir </a>    
+
+</div>
+                
+    
+                                      
+                </fieldset>
+                <div class="btn_alinhamento">
+                    <button type="submit" id="submit">Cadastrar</button>
+                    <button type="button" id="cancel">Cancelar</button>
+
+                    
+                </div>    
+            </form>
+        </div>
+        <!--FIM 1ª DOBRA-->
+
+        
+
+        <footer class="main_footer_rights">
+            <p> BUSCA SERVICE - Todos os direitos reservados. &reg;</p>
+        </footer>
+
+    </main>
+    <!--FIM DOBRA PALCO PRINCIPAL-->
+
+</body>
+
+</html>
